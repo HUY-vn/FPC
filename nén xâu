@@ -1,0 +1,12 @@
+lt:='';ext:='';
+FOR i:=1 TO length(s) DO
+ BEGIN
+  IF s[i]IN['0'..'9'] THEN lt:=lt+s[i]
+  ELSE
+   BEGIN
+    val(lt,k);
+    FOR j:=1 TO k DO ext:=ext+s[i];
+    IF lt='' THEN ext:=ext+s[i];
+    lt:=''
+   END;
+ END;
