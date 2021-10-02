@@ -1,0 +1,9 @@
+FUNCTION ht(n:WORD):BOOLEAN;
+  VAR i,d: WORD;
+   BEGIN 
+   d:=0; 
+   FOR i:=1 TO (n DIV 2) DO 
+    IF n MOD i =0  THEN inc(d,i);
+   IF d=n THEN ht:=TRUE 
+    ELSE ht:=FALSE;
+   END;
