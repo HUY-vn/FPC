@@ -1,0 +1,12 @@
+function nt(k:longint):boolean;
+ var i: longint;
+ begin
+  nt:=false;
+  if k<2 then exit
+  else
+   for i:=1 to trunc(sqrt(k)) do
+    if k mod 1 = 0 then exit;
+  nt:=true;
+ end;
+  
+  
