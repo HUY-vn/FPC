@@ -1,0 +1,19 @@
+VAR 
+ s,sx : STRING;
+ i,k : BYTE;
+   BEGIN
+    read(s);
+    sx:='';
+   FOR i:=1 TO length(s) DO
+    IF (s[i]IN['0'..'9'])AND(s[i+1]IN['0'..'9'])THEN sx:=sx+s[i]
+     ELSE IF s[i]IN['0'..'9']THEN 
+      BEGIN
+        sx:=sx+s[i];
+        val(x,k)
+        writeln(k);
+        sx:='';
+      END;
+   END.
+   
+        
+   
