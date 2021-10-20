@@ -1,14 +1,16 @@
 FUNCTION tp(k:INTEGER):STRING;
  VAR 
- l:INTEGER;
- x:STRING;
+ l,i:INTEGER;
+ x,s:STRING;
   BEGIN
-    tp:=''; 
+    tp:='';s:=''; 
    WHILE k<>0 DO
     BEGIN
      l:=k MOD 2;
      k:=k DIV 2;
      str(l,x);
-     tp:=tp+x;
+    s:=s+x;     
     END;
+  FOR i:=length(s) DOWNTO 1 DO
+   tp:=tp+s[i];
   END;
