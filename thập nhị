@@ -1,0 +1,14 @@
+FUNCTION tp(k:INTEGER):STRING;
+ VAR 
+ l:INTEGER;
+ x:STRING;
+  BEGIN
+    tp:=''; 
+   WHILE k<>0 DO
+    BEGIN
+     l:=k MOD 2;
+     k:=k DIV 2;
+     str(l,x);
+     tp:=tp+x;
+    END;
+  END;
