@@ -1,1 +1,19 @@
-
+FUNCTION lt(a,b:BYTE):LONGINT;
+ VAR i:BYTE;
+  BEGIN
+   lt:=1;
+    FOR i:=1 TO b DO
+     lt:=lt*a;
+  END;
+{}  
+FUNCTION np(k:STRING):LONGINT;
+ VAR i,l,z:BYTE;
+  BEGIN
+   l:=length(s);
+   np:=0;
+  FOR i:=1 TO l DO 
+   BEGIN
+    val(s[i],z);
+    np:=np+z*lt(2,l-i);
+   END;
+  END;
